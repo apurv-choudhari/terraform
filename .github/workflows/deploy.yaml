@@ -2,7 +2,7 @@ name: CI/CD with Terraform
 on:
   push:
     branches:
-      - LogIngester
+      - terraform
 
 env:
   AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
