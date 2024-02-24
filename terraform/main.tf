@@ -11,7 +11,7 @@ terraform {
 }
 
 provider "aws" {
-  region = var.region
+  region = "us-east-1"
 }
 resource "aws_instance" "servernode" {
   ami                    = "ami-0c7217cdde317cfec"
