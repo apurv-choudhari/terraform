@@ -13,6 +13,8 @@ terraform {
 provider "aws" {
   region = "us-east-2"
 }
+
+
 resource "aws_instance" "servernode" {
   ami                    = "ami-05fb0b8c1424f266b"
   instance_type          = "t2.micro"
@@ -30,6 +32,8 @@ resource "aws_instance" "servernode" {
     "name" = "DeployVM"
   }
 }
+
+
 resource "aws_iam_instance_profile" "ec2-profile1" {
   name = "ec2-profile1"
   role = "ECR-LOGIN-AUTH"
